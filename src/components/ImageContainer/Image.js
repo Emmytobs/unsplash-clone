@@ -1,18 +1,16 @@
 import React from 'react'
 
 export default function Image(props) {
-    console.log(props.src)
     return (
-        <div className="imageDiv">
+        <div key={props.key} className="imageDiv">
             <img 
                 alt="Demo" 
-                src={props.url}
-                className="image" 
-                width={props.width} 
-                height={props.height} 
+                src={props.smallUrl}
+                className="image"
+                data-full-image-url={props.fullUrl}
             />
             <div className="blurb-text">
-                <p className="author-name">{props.name}</p>
+                <p className="author-name">{props.firstName} {props.lastName}</p>
                 <p className="author-location">{props.location}</p>
             </div>
         </div>

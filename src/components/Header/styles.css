@@ -51,6 +51,7 @@ form > p {
 .search-text {
     width: 300px;
     line-break: strict;
-    margin: 30px auto 0;
+    margin: 30px auto;
     font-size: 1.3em;
+    font-weight: 700;
 }
