@@ -12,7 +12,7 @@ export default function ImageContainer(props) {
     }
 
     const imagesToRender = props.imageData.map(image => {
-        return <Image key={image.id} smallUrl={image.smallUrl} fullUrl={image.fullUrl} firstName={image.firstName} lastName={image.lastName} location={image.location} />
+        return <Image key={image.id} smallUrl={image.smallUrl} fullUrl={image.fullUrl} firstName={image.firstName} lastName={image.lastName} location={image.location} showModal={props.showModal} />
     })
 
     return (
