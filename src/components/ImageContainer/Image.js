@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Image(props) {
     return (
-        <div key={props.key} className="imageDiv">
+        <div key={props.key} className="imageDiv" onClick={(el) => props.showModal(el, { firstName: props.firstName, lastName: props.lastName, location: props.location })}>
             <img 
                 alt="Demo" 
                 src={props.smallUrl}
