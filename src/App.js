@@ -77,7 +77,7 @@ function App() {
     <div className="App">
       <Header input={formData.searchInput} handleChange={handleChange} handleSubmit={handleSubmit} />
       <ImageContainer error={error} imageData={imageData} isSearching={isSearching} input={formData.searchInput} showModal={showModal} />
-      <button className="view-more" onClick={fetchImages}>View More</button>
+      {imageData.length && <button className="view-more" onClick={fetchImages}>View More</button>}
       <Modal firstName={imageData.firstName} lastName={imageData.lastName} location={imageData.location} modalImage={modalImage} modalShouldShow={modalShouldShow} closeModal={closeModal} />
     </div>
   );
