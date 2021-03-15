@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
 
 export default function SearchText(props) {
-    return (
-        <>
-            {props.searchInput && <p className="search-text">Searching for "{props.searchInput}"...</p>}
-            {/* {<p className="search-text">Searching for many things to render...</p>} */}
-        </>
-    )
+  //   console.log(props.hasSearched);
+  return (
+    <>
+      {props.hasSearched && (
+        <p className="search-text">Showing results for "{props.searchInput}"</p>
+      )}
+    </>
+  );
 }
