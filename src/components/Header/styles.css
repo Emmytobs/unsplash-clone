@@ -53,6 +53,7 @@ form > p {
 */
 .search-text {
   width: 300px;
+  text-align: center;
   line-break: strict;
   margin: 30px auto;
   font-size: 1.3em;
