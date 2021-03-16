@@ -1,13 +1,12 @@
-
 /* 
     STYLING FOR THE HEADER COMPONENT
 */
 .header {
-    width: 100%;
-    padding: 25px 30px;
-    margin: 0;
-    background: #DDE2E9;
-    min-height: 130px;
+  width: 100%;
+  padding: 25px 30px;
+  margin: 0;
+  background: #dde2e9;
+  min-height: 130px;
 }
 
 /* 
@@ -15,43 +14,47 @@
 */
 
 form {
-    width: 50%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+@media screen and (max-width: 900px) {
+  form {
+    width: 95%;
+  }
 }
 
 form > input {
-    width: 100%;
-    padding: 6px 12px;
-    background: transparent;
-    border-width: 0;
-    outline: 0;
-    color: gray;
-    font-weight: 700;
-    font-size: 1.05em;
+  width: 100%;
+  padding: 6px 12px;
+  background: transparent;
+  border-width: 0;
+  outline: 0;
+  color: gray;
+  font-weight: 700;
+  font-size: 1.05em;
 }
 
 form > input::placeholder {
-    font-weight: 700;
-    color: gray;
+  font-weight: 700;
+  color: gray;
 }
 
 form > p {
-    margin: 0;
+  margin: 0;
 }
-
 
 /* 
     STYLING FOR THE SEARCHTEXT COMPONENT
 */
 .search-text {
-    width: 300px;
-    line-break: strict;
-    margin: 30px auto;
-    font-size: 1.3em;
-    font-weight: 700;
+  width: 300px;
+  line-break: strict;
+  margin: 30px auto;
+  font-size: 1.3em;
+  font-weight: 700;
 }
