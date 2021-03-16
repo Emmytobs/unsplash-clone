@@ -8,6 +8,10 @@
   background: #dde2e9;
   min-height: 130px;
 }
+.author {
+  margin: 0 0 20px 0px;
+  text-align: center;
+}
 
 /* 
     STYLING FOR THE INPUTBOX COMPONENT
